@@ -1,0 +1,17 @@
+{
+  "name": "colored-logs",
+  "version": "1.0.2",
+  "description": "Colored Logs allow you to print beautiful logs with no effort.",
+  "main": "index.js",
+  "author": "ZaKKu",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^10.9.2",
+    "typescript": "^3.0.1"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "pretty-format": "^23.5.0",
+    "timezone-utils": "^1.0.1"
+  }
+}
