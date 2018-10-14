@@ -1,10 +1,15 @@
 {
   "name": "colored-logs",
   "version": "1.0.2",
-  "description": "Colored Logs allow you to print beautiful logs with no effort.",
+  "description": "Print beautiful logs with no effort, just like that!",
   "main": "index.js",
   "author": "ZaKKu",
   "license": "MIT",
+  "repository": "https://gitlab.com/ZaKKu/colored-logs.git",
+  "keywords": [
+    "logger",
+    "beautiful"
+  ],
   "devDependencies": {
     "@types/node": "^10.9.2",
     "typescript": "^3.0.1"
