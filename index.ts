@@ -85,7 +85,9 @@ class Logger {
             });
         }).map((m) => m.replace(/^(?!\s+$)/gm, " ".repeat(13)).trim());
 
-        if (!this.fileWriteStream) {
+        let enabled = this.options.filePath || this.options.timed_logs;
+
+        if (!this.fileWriteStream && enabled) {
             if (this.options.filePath && !this.options.timed_logs) {
 
                 let i = 1;
@@ -106,11 +108,11 @@ class Logger {
         }
 
         process.stdout.write(util.format.apply(arguments, [chalk.grey(new Time(this.options.timezone).time()), `[${titles[level]}]`, ...formatted]) + "\n");
-        this.fileWriteStream.write(`${new Time(this.options.timezone).time()} [${level.toUpperCase()}] ${formatted.join(" ")}\n`);
+        if (enabled && this.fileWriteStream) this.fileWriteStream.write(`${new Time(this.options.timezone).time()} [${level.toUpperCase()}] ${formatted.join(" ")}\n`);
 
         if (error) {
             process.stdout.write(util.format.apply(arguments, [error]) + "\n");
-            this.fileWriteStream.write(error.stack + "\n");
+            if (enabled && this.fileWriteStream) this.fileWriteStream.write(error.stack + "\n");
         }
     }
 
