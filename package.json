@@ -1,6 +1,6 @@
 {
   "name": "colored-logs",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Print beautiful logs with no effort, just like that!",
   "main": "index.js",
   "author": "ZaKKu",
