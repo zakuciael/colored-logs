@@ -1,6 +1,6 @@
 # Colored Logs
-![npm](https://img.shields.io/npm/v/colored-logs?label=NPM%20Version&style=flat-square)
-![npm](https://img.shields.io/npm/dt/colored-logs?label=NPM%20Downloads&style=flat-square)
+[![npm](https://img.shields.io/npm/v/colored-logs?label=NPM%20Version&style=flat-square)](https://www.npmjs.com/package/colored-logs)
+[![npm](https://img.shields.io/npm/dt/colored-logs?label=NPM%20Downloads&style=flat-square)](https://www.npmjs.com/package/colored-logs)
 
 Simple yet elegant logger for your node.js application.
 
