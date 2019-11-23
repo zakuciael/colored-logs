@@ -1,5 +1,18 @@
 # Colored Logs
-Print beautiful logs with no effort, just like that!
+![npm](https://img.shields.io/npm/v/colored-logs?label=NPM%20Version&style=flat-square)
+![npm](https://img.shields.io/npm/dt/colored-logs?label=NPM%20Downloads&style=flat-square)
+
+Simple yet elegant logger for your node.js application.
+
+## Installation
+#### Using Yarn
+```bash
+yarn add colored-logs
+```
+#### Using NPM
+```bash
+npm install colored-logs
+```
 
 ## Usage
 
@@ -36,9 +49,3 @@ Logger.error(new Error(`Little Error`), "looking on this error");
 
 ## Output Example
 <img width="700px" alt="Output Screenshot" src="https://gitlab.com/ZaKKu/colored-logs/raw/master/screenshot.png?inline=false">
-
-## License
-[MIT License](http://www.opensource.org/licenses/mit-license.php)
-
-## Author
-[Krzysztof Saczuk (ZaKKu)](https://zakku.eu)
